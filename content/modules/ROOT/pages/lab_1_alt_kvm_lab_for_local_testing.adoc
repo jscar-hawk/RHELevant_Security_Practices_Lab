@@ -139,7 +139,7 @@ In your terminal
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo cp /var/lib/libvirt/images/rhel-9.3-x86_64-kvm.qcow2 /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2
+sudo cp /var/lib/libvirt/images/rhel-9.4-x86_64-kvm.qcow2 /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2
 ----
 
 Then we will want to customize the kvm image with the following command.
