@@ -192,7 +192,7 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2 -
 ** In the top Right side click the **Import VM**
 *** In the Name feild we want to use **node1**
 *** On the Connections option we want to make sure that **System** is selected
-*** On the Disk image we want to use this path **/var/lib/libvirt/images//var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2**
+*** On the Disk image we want to use this path **/var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2**
 *** On Operation system choose Red Hat Enterprise Linux 9
 *** On Memory go with the default 2 GB of Ram
 *** Then Click the **Import and Run** 
