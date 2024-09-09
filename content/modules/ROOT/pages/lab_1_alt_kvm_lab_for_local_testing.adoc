@@ -108,7 +108,7 @@ sudo systemctl enable libvirtd --now
 sudo systemctl enable --now cockpit.socket
 ----
 
-=== 1.5.2 KVM Image Prep of baston and node1
+=== 1.5.2 KVM Image Prep of bastion and node1
 
 Once you have downloaded the kvm/qcow2 images,
 Move them to `/var/lib/libvirt/images`
@@ -124,13 +124,13 @@ Then lets verify that the image is in the right location.
 ----
 sudo ls /var/lib/libvirt/images/
 ----
-Next we will make a copy of the image and name it baston.
+Next we will make a copy of the image and name it bastion.
 
 In your terminal
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo cp /var/lib/libvirt/images/rhel-9.4-x86_64-kvm.qcow2 /var/lib/libvirt/images/baston-rhel-9.4-x86_64-kvm.qcow2
+sudo cp /var/lib/libvirt/images/rhel-9.4-x86_64-kvm.qcow2 /var/lib/libvirt/images/bastion-rhel-9.4-x86_64-kvm.qcow2
 ----
 
 Next we will make a copy of the image and name it node1.
@@ -156,7 +156,7 @@ Then set a root password into the image
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo virt-customize -a /var/lib/libvirt/images/baston-rhel-9.4-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
+sudo virt-customize -a /var/lib/libvirt/images/bastion-rhel-9.4-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
 
 sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
 ----
@@ -197,7 +197,7 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2 -
 *** On Memory go with the default 2 GB of Ram
 *** Then Click the **Import and Run** 
 
-This should bring you back to the **Virtual machines** with a new entery for node1.
+This should bring you back to the **Virtual machines** with a new entery for bastion.
 
 Click on that node and you should see and Overview, Usage and Console window.
 
@@ -206,7 +206,7 @@ Click on the Console window, and log in with your root user and password.
 username: root
 password: MySecurePassphrasefor2024
 
-Then you will want to find out what the ip address is for node1,
+Then you will want to find out what the ip address is for bastion,
 In the console type
 
 [source,ini,role=execute,subs=attributes+]
