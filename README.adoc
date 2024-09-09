@@ -20,7 +20,6 @@
 === How to Follow along with the lab.
 
 * https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/index.adoc[Lab Landing Page]
-* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_1_rhpds_lab_setup.adoc[RHPDS Lab Setup]
 * https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_1_alt_kvm_lab_for_local_testing.adoc[How to set up a Local Linux Machine with KVM to do this lab]
 * https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_2_ansible_101.adoc[Ansible 101]
 * https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_3_creating_a_system_baseline.adoc[Creating a system baseline]
