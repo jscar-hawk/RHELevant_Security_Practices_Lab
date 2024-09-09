@@ -1,4 +1,4 @@
-= RHELevant Security Practices Lab - LB1964
+= RHELevant Security Practices Lab -
 
 Welcome to RHELevant Security Practices Lab! We hope you're ready for a dive into security practices with a couple of techies who love to talk about Red Hat Enterprise Linux (RHEL)!
 
