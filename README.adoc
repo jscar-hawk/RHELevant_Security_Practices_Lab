@@ -19,14 +19,14 @@
 
 === How to Follow along with the lab.
 
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/index.adoc[Lab Landing Page]
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_1_alt_kvm_lab_for_local_testing.adoc[How to set up a Local Linux Machine with KVM to do this lab]
-* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_2_ansible_101.adoc[Ansible 101]
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_3_creating_a_system_baseline.adoc[Creating a system baseline]
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_4_theory_threats_and_tools.adoc[Managing Risk & Security Framework]
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_5_common_misconfigurations.adoc[Common Misconfigurations]
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_6_green_field_implementation.adoc[Green Field Implementation]
-* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_7_web_console.adoc[Install Web Console]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/index.adoc[Lab 0: Landing Intro Page]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_1_alt_kvm_lab_for_local_testing.adoc[Lab 1: Set up a Local Linux Machine with KVM]
+* https://github.com/rhpds/summit_2024_RHELevant_Security_Practices_Lab_LB1964/blob/main/content/modules/ROOT/pages/lab_2_ansible_101.adoc[Lab 2: Ansible 101]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_3_creating_a_system_baseline.adoc[Lab 3: Creating a system baseline]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_4_theory_threats_and_tools.adoc[Lab 4: Managing Risk & Security Framework]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_5_common_misconfigurations.adoc[Lab 5: Common Misconfigurations]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_6_green_field_implementation.adoc[Lab 6: Green Field Implementation]
+* https://github.com/jscar-hawk/RHELevant_Security_Practices_Lab/blob/main/content/modules/ROOT/pages/lab_7_web_console.adoc[Lab 7: Install Web Console]
 
 === Speaker Information:
 
