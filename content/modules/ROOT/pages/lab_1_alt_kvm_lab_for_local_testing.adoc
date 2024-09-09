@@ -186,7 +186,68 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2 -
 **** And make sure the **Startup** is checked.
 **** Click the **Create** Button.
 
-=== 1.5.4 Configure Cockpit for Virtual Machines
+=== 1.5.4 Configure Cockpit for bastion Virtual Machine
+
+* On the left hand side find and click **Virtual machines**,
+** In the top Right side click the **Import VM**
+*** In the Name feild we want to use **bastion**
+*** On the Connections option we want to make sure that **System** is selected
+*** On the Disk image we want to use this path **/var/lib/libvirt/images/bastion-rhel-9.4-x86_64-kvm.qcow2**
+*** On Operation system choose Red Hat Enterprise Linux 9
+*** On Memory go with the default 2 GB of Ram
+*** Then Click the **Import and Run** 
+
+This should bring you back to the **Virtual machines** with a new entery for node1.
+
+Click on that node and you should see and Overview, Usage and Console window.
+
+Click on the Console window, and log in with your root user and password.
+
+username: root
+password: MySecurePassphrasefor2024
+
+Then you will want to find out what the ip address is for node1,
+In the console type
+
+[source,ini,role=execute,subs=attributes+]
+----
+ip addr
+----
+
+Take note of the IP address, then open a terminal on your **bastion** machine.
+
+
+You will also need to create a user to connect with over ssh since root is disabled by default in rhel 9.
+
+To keep usernames and permissions the same for the rest of the lab, we will set up a user called `ec2-user`
+
+[source,ini,role=execute,subs=attributes+]
+----
+useradd -m -g wheel ec2-user
+----
+
+and we will set a password 
+
+[source,ini,role=execute,subs=attributes+]
+----
+passwd ec2-user
+
+LetMeIn1
+----
+
+Next we need to set your hostname in the vm
+[source,ini,role=execute,subs=attributes+]
+----
+hostnamectl set-hostname bastion
+----
+
+Then reboot your virtual machine.
+
+[source,ini,role=execute,subs=attributes+]
+----
+reboot
+----
+=== 1.5.5 Configure Cockpit for node1 Virtual Machine
 
 * On the left hand side find and click **Virtual machines**,
 ** In the top Right side click the **Import VM**
