@@ -1,4 +1,4 @@
-== Welcome to the Red Hat Summit 2024 RHELevant Security Practices Lab LB1964
+== Welcome to the Red Hat Summit 2024 RHELevant Security Practices Lab
 
 === Abstract:
 
@@ -15,7 +15,6 @@
 
 === Getting Started
 
-* Join us live at summit using our Red Hat Demo Platform or
 * Follow the Documentation to do this on your own linux machine inside of a VM.
 
 === How to Follow along with the lab.
