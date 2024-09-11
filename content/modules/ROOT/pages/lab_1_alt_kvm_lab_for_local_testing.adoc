@@ -186,7 +186,13 @@ sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-9.4-x86_64-kvm.qcow2 -
 **** And make sure the **Startup** is checked.
 **** Click the **Create** Button.
 
-=== 1.5.4 Configure Cockpit for bastion Virtual Machine
+=== 1.5.4 Configure Cockpit for Networked Bridge
+
+* On the left hand side find and click **Networking**,
+** On the right hand side, click the button "Add Bridge",
+** Click Add Button
+
+=== 1.5.5 Configure Cockpit for bastion Virtual Machine
 
 * On the left hand side find and click **Virtual machines**,
 ** In the top Right side click the **Import VM**
@@ -247,7 +253,7 @@ Then reboot your virtual machine.
 ----
 reboot
 ----
-=== 1.5.5 Configure Cockpit for node1 Virtual Machine
+=== 1.5.6 Configure Cockpit for node1 Virtual Machine
 
 * On the left hand side find and click **Virtual machines**,
 ** In the top Right side click the **Import VM**
