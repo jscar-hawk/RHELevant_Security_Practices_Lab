@@ -20,16 +20,16 @@ First, you need to create a vault file to store the new root password securely.
 
 1. Run the following command to create a new vault file:
 
-   [source,bash]
+   [source,ini,role=execute,subs=attributes+]
    ----
    ansible-vault create vault.yml
    ----
 
-2. You will be prompted to enter a password for the vault. Choose a strong password and remember it, as you will need it to access the vault later.
+2. You will be prompted to enter a password for the vault. Choose a strong password and remember it, as you will need it to access the vault later. In this example I'll use "AdminPassword".
 
 3. In the editor that opens, add the following content:
 
-   [source,yaml]
+   [source,ini,role=execute,subs=attributes+]
    ----
    new_root_password: "YourNewPasswordHere"  # Change this to your desired password
    ----
@@ -42,7 +42,7 @@ Next, create the Ansible playbook that will use the vault file to reset the root
 
 1. Create a file named `reset_root_password.yml` with the following content:
 
-   [source,yaml]
+   [source,ini,role=execute,subs=attributes+]
    ----
    ---
    - name: Reset root password
@@ -62,7 +62,7 @@ Next, create the Ansible playbook that will use the vault file to reset the root
 
 To run the playbook and reset the root password, use the following command:
 
-[source,bash]
+[source,ini,role=execute,subs=attributes+]
 ----
 ansible-playbook -i your_inventory_file reset_root_password.yml --ask-vault-pass
 ----
