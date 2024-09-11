@@ -1,0 +1,70 @@
+== Ansible 102
+
+Lab Length
+Medium/Average (~10-20 mins)
+
+Goal
+Become familiar with the basics of ansible roles
+
+== 8.1 Introduction to Ansible system roles
+
+RHEL System Roles is a collection of Ansible roles and modules that provide a stable and consistent configuration interface to automate and manage multiple releases of Red Hat Enterprise Linux. 
+The effort is based on development of the Linux System Roles upstream project, and for the SAP related roles, the SAP LinuxLab upstream project.
+
+== 8.2 Common Tasks to help understand and monitor your systems
+
+
+=== Step 8.2.1: Create an Ansible Vault File
+
+First, you need to create a vault file to store the new root password securely.
+
+1. Run the following command to create a new vault file:
+
+   [source,bash]
+   ----
+   ansible-vault create vault.yml
+   ----
+
+2. You will be prompted to enter a password for the vault. Choose a strong password and remember it, as you will need it to access the vault later.
+
+3. In the editor that opens, add the following content:
+
+   [source,yaml]
+   ----
+   new_root_password: "YourNewPasswordHere"  # Change this to your desired password
+   ----
+
+4. Save and exit the editor.
+
+== Step 8.2.2: Create the Ansible Playbook
+
+Next, create the Ansible playbook that will use the vault file to reset the root password.
+
+1. Create a file named `reset_root_password.yml` with the following content:
+
+   [source,yaml]
+   ----
+   ---
+   - name: Reset root password
+     hosts: all
+     become: yes  # Use become to execute tasks with elevated privileges
+     vars_files:
+       - vault.yml  # Include the vault file
+
+     tasks:
+       - name: Update root password
+         user:
+           name: root
+           password: "{{ new_root_password | password_hash('sha512') }}"
+   ----
+
+== Step 8.2.3: Running the Playbook
+
+To run the playbook and reset the root password, use the following command:
+
+[source,bash]
+----
+ansible-playbook -i your_inventory_file reset_root_password.yml --ask-vault-pass
+----
+
+Replace `your_inventory_file` with the path to your Ansible inventory file that contains the target hosts.
