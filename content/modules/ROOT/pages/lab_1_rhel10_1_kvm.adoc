@@ -156,9 +156,9 @@ Then set a root password into the image
 
 [source,ini,role=execute,subs=attributes+]
 ----
-sudo virt-customize -a /var/lib/libvirt/images/bastion-rhel-10.1-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
+sudo virt-customize -a /var/lib/libvirt/images/bastion-rhel-10.1-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2026 --uninstall cloud-init
 
-sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-10.1-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2024 --uninstall cloud-init
+sudo virt-customize -a /var/lib/libvirt/images/node1-rhel-10.1-x86_64-kvm.qcow2 --root-password password:MySecurePassphrasefor2026 --uninstall cloud-init
 ----
 
 
