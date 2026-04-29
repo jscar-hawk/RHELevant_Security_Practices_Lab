@@ -238,7 +238,7 @@ and we will set a password
 ----
 passwd rhel
 
-LetMeIn1
+LetMeIn2026
 ----
 
 Next we need to set your hostname in the vm
